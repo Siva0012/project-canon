@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    
+    font-family: lato;
+    width: 100%;
+    
+}
+
+
+body li{
+    list-style: none;
+}
+
+body p{
+    color: rgb(88, 88, 88);
+}
+
+body a{
+    text-decoration: none;
+}
+
+                                                        /*header*/
+header{
+    width: 100%;
+}
+
+.header-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapse-header{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.left-collapse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 30px;
+}
+
+.left-collapse li{
+    margin-bottom: 0px;
+}
+
+.left-collapse span{
+    margin-left: 20px;
+    
+}
+
+.right-collapse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 65px;
+    top: 20px;
+}
+
+
+.right-collapse ul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.right-collapse #style-cb{
+    position: relative;
+}
+
+.right-collapse li{
+    list-style: none;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.right-collapse a{
+    text-decoration: none;
+    color: #ec1d24;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right-collapse i{
+    color: black;
+    transition: .2s;
+}
+
+#style-rc #style-cb .style-a{
+    color: #5b5b5b;
+}
+
+#style-rc #style-cb .style-a:hover{      /*hover*/
+    color: #ec1d24;
+}
+
+#style-rc #style-search i:hover{        /*hover*/
+    color: #ec1d24;
+}
+
+                                                    /*content wrapper*/
+.content-wrapper{                           
+    margin: 0 auto;
+    width: 1140px;
+}
+
+                                                    /*nav bar*/
+
+nav{
+    background-color: #353535;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1140px;
+    padding: 20px 0px;
+
+}
+
+.nav-wrapper ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.nav-wrapper a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.nav-left a{
+    margin-right: 20px;
+}
+
+.nav-right{
+    margin-left: 50px;
+}
+
+.nav-right a{
+    margin-left: 20px;
+}
+
+#list-hover a:hover{
+    color: #ec1d24;
+}
+
+                                                    /*Banner*/
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.content-wrapper{
+    position: relative;
+    top: -60px;
+}
+
+                                                    /*Section*/
+
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+                                                    /*product display*/
+#product-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#product-display .product{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px .1px hsl(0, 1%, 79%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+
+
+#product-display .product .content{
+    margin: 10px 0px 25px;
+}
+
+                                                    /*new product*/
+.new-product{
+    box-shadow: 5px 5px 20px .5px hsl(0, 0%, 85%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 0px 20px 20px;
+}
+
+.new-product .product-description{
+    width: 500px;
+}
+
+.new-product .product-description h3{
+    margin-bottom: 35px;
+}
+
+.new-product .product-description p{
+    line-height: 25px;
+}
+
+#view-button{
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 60px;
+    border-style: none;
+    background-color: #ec1d24;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    transition: .5s;
+}
+
+#view-button:hover{                 /*hover*/
+    cursor: pointer;
+    background-color: #a31e21;
+}
+
+.section-wrapper{
+    margin-bottom: 25px;
+}
+
+.section-wrapper #more-button{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.section-wrapper #more-prd-button{
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 60px;
+    border: 1px solid #dedede;
+    background-color: white;
+    color: #ec1d24;
+    font-weight: bold;
+    font-size: 12px;
+    transition: .5s;
+    
+}
+
+#more-prd-button:hover{
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+                                                    /*article*/
+
+.article-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#news-title{
+    font-size: 40px;
+    font-weight: 100;
+    color: #5b5b5b;
+}
+
+
+.latest-news{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px .5px hsl(0, 0%, 85%);
+    margin: 25px 0px 25px;
+}
+
+.latest-news .latest-news-content{
+    text-align: left;
+    padding-right: 45px;
+}
+
+.latest-news .latest-news-content h3{
+    margin-bottom: 35px;
+}
+
+.latest-news #read-button{
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #dedede;
+    background-color: #ec1d24;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 20px;
+    transition: .5s;
+    
+}
+
+#read-button:hover{
+    cursor: pointer;
+    background-color: #a31e21;
+}
+
+.old-news{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.old-news .news-tile{
+    background-color: white;
+    width: 360px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px .5px hsl(0, 0%, 85%);
+
+}
+
+.old-news .news-tile .old-news-article{
+    margin: 20px 0px 20px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.old-news .news-tile img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.old-news .news-tile p{
+    margin-top: 20px;
+}
+
+.sub-title{
+    font-size: 24px;
+    color: rgb(88, 88, 88);
+    font-weight: lighter;
+    transition: .5s;
+}
+
+.sub-title:hover{
+    color: #ec1d24;
+}
+
+.more-news{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#view-more-button{
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 40px;
+    padding: 15px;
+    background-color: white;
+    color: #ec1d24;
+    font-weight: bold;
+    font-size: 12px;
+    transition: .5s;
+}
+
+#view-more-button:hover{
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+                                                        /*footer*/
+footer a{
+    color: black;
+}
+.footer-wrapper{
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+.div-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer-wrapper .button-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper button,span:hover{
+    cursor: pointer;
+}
+
+.footer-wrapper button{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+
+
+.footer-menu-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-menu-wrapper .company{
+    width: 165px;
+}
+
+.footer-menu-wrapper .company .title{
+    color: #9e9e9e;
+    font-weight: bold;
+}
+
+.footer-menu-wrapper .company ul li,a{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+
+.footer-menu-wrapper .company a:hover{
+    color: #ec1d24;
+}
+
+
+.footer-menu-wrapper .company .other-sites{
+    font-weight: bold;
+}
+
+                                                        /*sub footer*/
+.sub-footer{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.sub-footer hr{
+    margin-bottom: 25px;
+}
+
+html #footer-image{
+    position: absolute;
+    right: 0px;
+
+}
+
+
+
+
+
+
